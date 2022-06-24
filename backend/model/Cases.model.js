@@ -16,8 +16,9 @@ var Case = new Schema({
     endDate: Date,
     status: String,
     summary: String
+}, {
+    timestamps: true
 });
 
-
-// exporting the case as a model name Case
+// exporting the case schema as a model named Case
 module.exports = mongoose.model('Case', Case);
