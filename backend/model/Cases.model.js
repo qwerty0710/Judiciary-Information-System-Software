@@ -18,5 +18,6 @@ var Case = new Schema({
     summary: String
 });
 
+
 // exporting the case as a model name Case
 module.exports = mongoose.model('Case', Case);
