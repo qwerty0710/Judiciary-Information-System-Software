@@ -3,29 +3,29 @@ import { Link } from "react-router-dom";
 
 function Case(props) {
     return (
-        <tr>
-            <td>{props.currentCase._id}</td>
-            <td>{props.currentCase.defendantName}</td>
-            <td>{props.currentCase.defendantAddr}</td>
-            <td>{props.currentCase.crimeType}</td>
-            <td>{props.currentCase.crimeDate}</td>
-            <td>{props.currentCase.crimeLoc}</td>
-            <td>{props.currentCase.officerName}</td>
-            <td>{props.currentCase.arrestDate}</td>
-            <td>{props.currentCase.judgeName}</td>
-            <td>{props.currentCase.lawyerName}</td>
-            <td>{props.currentCase.startDate}</td>
-            <td>{props.currentCase.endDate}</td>
-            <td>{props.currentCase.status}</td>
-            <td>{props.currentCase.summary}</td>
-            <td>
+        <div className="table-row">
+            <div className="table-cell">{props.currentCase._id}</div>
+            <div className="table-cell">{props.currentCase.defendantName}</div>
+            <div className="table-cell">{props.currentCase.defendantAddr}</div>
+            <div className="table-cell">{props.currentCase.crimeType}</div>
+            <div className="table-cell">{props.currentCase.crimeDate}</div>
+            <div className="table-cell">{props.currentCase.crimeLoc}</div>
+            <div className="table-cell">{props.currentCase.officerName}</div>
+            <div className="table-cell">{props.currentCase.arrestDate}</div>
+            <div className="table-cell">{props.currentCase.judgeName}</div>
+            <div className="table-cell">{props.currentCase.lawyerName}</div>
+            <div className="table-cell">{props.currentCase.startDate}</div>
+            <div className="table-cell">{props.currentCase.endDate}</div>
+            <div className="table-cell">{props.currentCase.status}</div>
+            <div className="table-cell">{props.currentCase.summary}</div>
+            <div className="table-cell">
                 <Link
                     className="bg-link"
                     to={'/update/'+props.currentCase._id}
                 >
                 </Link>
-            </td>
-        </tr>
+            </div>
+        </div>
     )
 }
 
