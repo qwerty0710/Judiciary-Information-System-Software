@@ -342,7 +342,7 @@ function createCase() {
                         type="text"
                         className="form-control"
                         value={Case.crimeLocation}
-                        onChange={onChangeCrimeLocation}
+                        onChange={onChangeCrimeLoc}
                         required
                     />
                 </div>
