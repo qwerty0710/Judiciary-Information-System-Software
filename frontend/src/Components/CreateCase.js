@@ -417,6 +417,14 @@ function createCase() {
                         required
                     />
                 </div>
+                <div className="form-group">
+                    <input
+                        type="submit"
+                        className="btn"
+                        value="Create Case"
+                        onSubmit={onSubmit}
+                    />
+                </div>
             </form>
         </div>
     )
