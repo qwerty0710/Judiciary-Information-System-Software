@@ -44,7 +44,7 @@ function CreateUser() {
 
         console.log(newUser);
 
-        axios.post('http://localhost:3004/users/add', user)
+        axios.post('http://localhost:3004/users/add', newUser)
             .then(res => {
                 console.log(res.data);
                 alert("User added successfully!");
