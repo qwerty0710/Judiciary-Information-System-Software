@@ -3,7 +3,7 @@ import ReactDatePicker from "react-datepicker";
 import axios from "axios";
 import "react-datepicker/dist/react-datepicker.css"
 
-function createCase() {
+function CreateCase() {
     const [Case, setCase] = useState({
         defendantName: '',
         defendantAddr: '',
@@ -430,4 +430,4 @@ function createCase() {
     )
 }
 
-export default createCase;
+export default CreateCase;
