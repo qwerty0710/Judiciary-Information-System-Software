@@ -553,6 +553,11 @@ video {
   width: 18rem;
 }
 
+.bg-link {
+  --tw-bg-opacity: 1;
+  background-color: rgb(207 27 27 / var(--tw-bg-opacity));
+}
+
 .text-center {
   text-align: center;
 }
