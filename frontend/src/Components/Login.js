@@ -130,6 +130,7 @@ function Login() {
                         type="submit"
                         className="btn btn-primary"
                         value="Login"
+                        onSubmit={onSubmit}
                     />
                 </div>
             </form>
