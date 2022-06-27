@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
 import CaseList from './Components/CaseList';
@@ -13,11 +13,13 @@ function App() {
 			<div className='navbar-container'>
 				<Navbar />
 				<br />
-				<Route path='/' exact element={Login} />
-				<Route path='/caseList' exact element={CaseList} />
-				<Route path='/update/:id' element={UpdateCase} />
-				<Route path='/create' element={CreateCase} />
-				<Route path='/RegisterUser' element={CreateUser} />
+				<Routes>
+					<Route path='/' exact element={Login} />
+					<Route path='/caseList' exact element={CaseList} />
+					<Route path='/update/:id' element={UpdateCase} />
+					<Route path='/create' element={CreateCase} />
+					<Route path='/RegisterUser' element={CreateUser} />
+				</Routes>
 			</div>
 		</Router>
 	);

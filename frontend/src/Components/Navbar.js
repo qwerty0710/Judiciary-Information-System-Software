@@ -7,7 +7,7 @@ function Navbar() {
     const user = localStorage.getItem('username');
     const registrar = localStorage.getItem('registrar');
 
-    const content = null;
+    var content = null;
 
     const navigate = useNavigate();
 
