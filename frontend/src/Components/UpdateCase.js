@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 import ReactDatePicker from "react-datepicker";
 import axios from "axios";
 import "react-datepicker/dist/react-datepicker.css";
-import { useNavigate, withRouter } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { withRouter } from "../withRouter";
 
 function UpdateCase(props) {
 
