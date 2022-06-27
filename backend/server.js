@@ -3,6 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var db = mongoose.connect('mongodb://localhost/swag-shop-react');
+var cors = require('cors');
 
 var userRouter = require('./routes/User');
 var caseRouter = require('./routes/Case');
@@ -16,7 +17,6 @@ app.all('/*', (req, res, next) => {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());
 app.use(express.json());
 
 const PORT = 3004;
