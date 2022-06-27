@@ -18,45 +18,55 @@ function Navbar() {
 
     if (user === 'loggedIn') {
         content = 
-            <ul className="navbar-nav">
-                <li>
-                    <Link to="/create" className="nav-link">
+            <div className="hidden md:block">
+                <div className="ml-10 flex items-baseline space-x-4">
+                    <Link
+                        to="/create"
+                        className="text-blue-500 py-3 border-t border-b block"
+                    >
                         Create Cases
                     </Link>
-                </li>
-                <li className="navbar-item">
-                    <Link to='/caseList' className="nav-link">
+                    <Link
+                        to='/caseList'
+                        className="text-blue-500 py-3 border-b block"
+                    >
                         Cases
                     </Link>
-                </li>
-                <li className="navbar-item">
-                    <Link onClick={logout} className="nav-link">
+                    <Link
+                        onClick={logout}
+                        className="text-blue-500 py-3 border-b block"
+                    >
                         Logout
                     </Link>
-                </li>
-            </ul>
+                </div>
+            </div>
     }
     else {
         content = 
-            <ul>
-                <li className="navbar-item">
-                    <Link to="/RegisterUser" className="nav-link">
+            <div className="hidden md:block">
+                <div className="ml-10 flex items-baseline space-x-4">
+                    <Link
+                        to="/RegisterUser"
+                        className="text-blue-500 py-3 border-b block"
+                    >
                         Register
                     </Link>
-                </li>
-                <li className="navbar-item">
-                    <Link to="/" className="nav-link">
+                    <Link
+                        to="/"
+                        className="text-blue-500 py-3 border-b block">
                         Login
                     </Link>
-                </li>
-            </ul>
+                </div>
+            </div>
     }
 
     return (
-        <nav className="navbar">
-            <Link to='/' className="navbar-brand">Judiciary Information System</Link>
-            <div className="collapse">
-                {content}
+        <nav className="bg-gray">
+            <div className="flex flex-row items-center justify-around">
+                <Link to='/' className="navbar-brand">Judiciary Information System</Link>
+                <div className="flex items-center justify-between h-16">
+                    {content}
+                </div>
             </div>
         </nav>
     )
