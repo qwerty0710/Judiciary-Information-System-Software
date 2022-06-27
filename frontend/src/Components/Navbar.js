@@ -25,7 +25,7 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to='/create' className="nav-link">
+                    <Link to='/caseList' className="nav-link">
                         Cases
                     </Link>
                 </li>
@@ -54,7 +54,7 @@ function Navbar() {
 
     return (
         <nav className="navbar">
-            <Link className="navbar-brand">Judiciary Information System</Link>
+            <Link to='/' className="navbar-brand">Judiciary Information System</Link>
             <div className="collapse">
                 {content}
             </div>

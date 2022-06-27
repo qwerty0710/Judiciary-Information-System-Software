@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { withRouter } from "../withRouter";
+// import { withRouter } from "../withRouter";
 
 function Login() {
 
@@ -139,4 +139,4 @@ function Login() {
     )
 }
 
-export default withRouter(Login);
+export default Login;

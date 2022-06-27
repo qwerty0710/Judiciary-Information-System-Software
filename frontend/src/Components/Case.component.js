@@ -20,8 +20,8 @@ function Case(props) {
             <div className="table-cell">{props.currentCase.summary}</div>
             <div className="table-cell">
                 <Link
-                    className="bg-link"
                     to={'/update/'+props.currentCase._id}
+                    className="bg-link"
                 >
                 </Link>
             </div>

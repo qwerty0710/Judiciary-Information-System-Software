@@ -10,17 +10,14 @@ import UpdateCase from './Components/UpdateCase';
 function App() {
 	return (
 		<Router>
-			<div className='navbar-container'>
-				<Navbar />
-				<br />
-				<Routes>
-					<Route path='/' exact element={Login} />
-					<Route path='/caseList' exact element={CaseList} />
-					<Route path='/update/:id' element={UpdateCase} />
-					<Route path='/create' element={CreateCase} />
-					<Route path='/RegisterUser' element={CreateUser} />
-				</Routes>
-			</div>
+			<Navbar />
+			<Routes>
+				<Route path='/' element={<Login/>} />
+				<Route path='/caseList' element={<CaseList/>} />
+				<Route path='/update/:id' element={<UpdateCase/>} />
+				<Route path='/create' element={<CreateCase/>} />
+				<Route path='/RegisterUser' element={<CreateUser/>} />
+			</Routes>
 		</Router>
 	);
 }
