@@ -46,12 +46,6 @@ function Navbar() {
             <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                     <Link
-                        to="/RegisterUser"
-                        className="text-blue-500 py-3 block"
-                    >
-                        Register
-                    </Link>
-                    <Link
                         to="/"
                         className="text-blue-500 py-3 block">
                         Login

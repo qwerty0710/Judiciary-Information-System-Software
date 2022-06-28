@@ -16,7 +16,6 @@ function App() {
 				<Route path='/caseList' element={<CaseList/>} />
 				<Route path='/update/:id' element={<UpdateCase/>} />
 				<Route path='/create' element={<CreateCase/>} />
-				<Route path='/RegisterUser' element={<CreateUser/>} />
 			</Routes>
 		</Router>
 	);
