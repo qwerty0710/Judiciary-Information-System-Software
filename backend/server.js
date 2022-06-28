@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost/swag-shop-react');
+var db = mongoose.connect('mongodb://localhost/Jiss-Project');
 var cors = require('cors');
 
 var userRouter = require('./routes/User');

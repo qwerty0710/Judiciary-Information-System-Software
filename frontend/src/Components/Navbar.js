@@ -22,19 +22,19 @@ function Navbar() {
                 <div className="ml-10 flex items-baseline space-x-4">
                     <Link
                         to="/create"
-                        className="text-blue-500 py-3 border-t border-b block"
+                        className="text-blue-500 py-3 block"
                     >
                         Create Cases
                     </Link>
                     <Link
                         to='/caseList'
-                        className="text-blue-500 py-3 border-b block"
+                        className="text-blue-500 py-3 block"
                     >
                         Cases
                     </Link>
                     <Link
                         onClick={logout}
-                        className="text-blue-500 py-3 border-b block"
+                        className="text-blue-500 py-3 block"
                     >
                         Logout
                     </Link>
@@ -47,13 +47,13 @@ function Navbar() {
                 <div className="ml-10 flex items-baseline space-x-4">
                     <Link
                         to="/RegisterUser"
-                        className="text-blue-500 py-3 border-b block"
+                        className="text-blue-500 py-3 block"
                     >
                         Register
                     </Link>
                     <Link
                         to="/"
-                        className="text-blue-500 py-3 border-b block">
+                        className="text-blue-500 py-3 block">
                         Login
                     </Link>
                 </div>
@@ -61,7 +61,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="bg-gray">
+        <nav className="bg-gray-800 text-white">
             <div className="flex flex-row items-center justify-around">
                 <Link to='/' className="navbar-brand">Judiciary Information System</Link>
                 <div className="flex items-center justify-between h-16">

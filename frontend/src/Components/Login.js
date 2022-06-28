@@ -88,53 +88,56 @@ function Login() {
     }
 
     return (
-        <div className="w-100 text-center">
-            <h3>Login</h3>
-            <form onSubmit={onSubmit}>
-                <div className="form-group">
-                    <div className="w-72">
-                        <select
-                            label="designation"
-                            className="form-control"
-                            value={UserDetails.designation}
-                            onChange={onChangeDesignation}
-                            required
-                        >
-                            <option>Registrar</option>
-                            <option>Judge</option>
-                            <option>Lawyer</option>
-                        </select>
+        <div className="w-100 min-h-screen text-center bg-gray-400">
+            <div className="pt-40 flex justify-center flex-col">
+                <h3 className="font-bold text-xl">Login</h3>
+                <form onSubmit={onSubmit} className="flex flex-col">
+                    <div className="form-group mt-4">
+                        <div>
+                            <label>Designation: </label>
+                            <select
+                                label="designation"
+                                className="form-control w-40"
+                                value={UserDetails.designation}
+                                onChange={onChangeDesignation}
+                                required
+                            >
+                                <option>Registrar</option>
+                                <option>Judge</option>
+                                <option>Lawyer</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div className="form-group">
-                    <label>Username: </label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        value={UserDetails.username}
-                        onChange={onChangeUsername}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Password: </label>
-                    <input
-                        type="password"
-                        className="form-control"
-                        value={UserDetails.password}
-                        onChange={onChangePassword}
-                        required
-                    />
-                </div>
-                <div className="form-group">
-                    <input
-                        type="submit"
-                        className="btn btn-primary"
-                        value="Login"
-                        onSubmit={onSubmit}
-                    />
-                </div>
-            </form>
+                    <div className="form-group mt-4">
+                        <label>Username: </label>
+                        <input
+                            type="text"
+                            className="form-control w-40"
+                            value={UserDetails.username}
+                            onChange={onChangeUsername}
+                            required
+                        />
+                    </div>
+                    <div className="form-group mt-4">
+                        <label>Password: </label>
+                        <input
+                            type="password"
+                            className="form-control w-40"
+                            value={UserDetails.password}
+                            onChange={onChangePassword}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="submit"
+                            className="btn btn-primary mt-4"
+                            value="Login"
+                            onSubmit={onSubmit}
+                        />
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }
