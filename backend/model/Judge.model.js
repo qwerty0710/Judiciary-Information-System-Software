@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Lawyer = new Schema({
+var Judge = new Schema({
     username: {
         type: String,
         unique: true,
@@ -16,13 +16,9 @@ var Lawyer = new Schema({
     designation: {
         type: String,
         required: true
-    },
-    chargedAmount: {
-        type: int,
-        default: 0,
     }
 }, {
     timestamps: true
 });
 
-module.exports = mongoose.model('Lawyer', Lawyer);
+module.exports = mongoose.model('Judge', Judge);
